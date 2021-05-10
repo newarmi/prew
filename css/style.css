@@ -1408,6 +1408,7 @@ a:active {
 
 .form__input input {
   border: none;
+  border-radius: 0;
   width: 100%;
   height: calc(30px + 20 * ((100vw - 320px) / 1600));
   font-size: 40px;
