@@ -1164,10 +1164,10 @@ a:active {
   margin-left: calc(-12px + -34 * ((100vw - 320px) / 1600));
 }
 
-input {
-  -webkit-transition: opacity .8s;
-  -o-transition: opacity .8s;
-  transition: opacity .8s;
+.form__button .form__input {
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
 }
 
 .tariff__conteiner {
@@ -1400,11 +1400,15 @@ input {
 }
 
 .form._send input {
+  display: none;
   visibility: hidden;
   opacity: 0;
 }
 
 .form._send .send {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   visibility: visible;
   opacity: 1;
 }
@@ -1470,11 +1474,14 @@ input {
 }
 
 .send {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 0px;
+          flex: 0 1 0px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity .8s;
-  -o-transition: opacity .8s;
-  transition: opacity .8s;
+  -webkit-transition: all .8s linear .8s;
+  -o-transition: all .8s linear .8s;
+  transition: all .8s linear .8s;
 }
 
 .send--left {
