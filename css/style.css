@@ -1602,7 +1602,7 @@ a:active {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 25px 0px 25px;
 }
 
 .speek-content__text p {
