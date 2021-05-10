@@ -604,8 +604,8 @@ html {
 }
 
 .page__bullet {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #C4C4C4;
   margin: 6px 0;
@@ -627,7 +627,7 @@ html {
   position: absolute;
   top: 0;
   right: 0;
-  width: 4px;
+  width: 2px;
   height: 100%;
   background: rgba(109, 108, 108, 0.2);
 }
@@ -776,7 +776,7 @@ a:active {
   color: #681186;
 }
 
-.nav.active {
+.nav._active {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -826,7 +826,7 @@ a:active {
   bottom: 0;
 }
 
-.burger.active span {
+.burger._active span {
   -webkit-transition-property: top, bottom, -webkit-transform;
   transition-property: top, bottom, -webkit-transform;
   -o-transition-property: transform, top, bottom;
@@ -840,7 +840,7 @@ a:active {
           transition-delay: .2s, 0s, 0s;
 }
 
-.burger.active .burger__elem--top {
+.burger._active .burger__elem--top {
   top: 7px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -850,11 +850,11 @@ a:active {
           transform-origin: center center;
 }
 
-.burger.active .burger__elem--midle {
+.burger._active .burger__elem--midle {
   display: none;
 }
 
-.burger.active .burger__elem--botton {
+.burger._active .burger__elem--botton {
   bottom: 7px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -1164,6 +1164,12 @@ a:active {
   margin-left: calc(-12px + -34 * ((100vw - 320px) / 1600));
 }
 
+input {
+  -webkit-transition: opacity .8s;
+  -o-transition: opacity .8s;
+  transition: opacity .8s;
+}
+
 .tariff__conteiner {
   margin: 0 auto;
   padding: 0 30px;
@@ -1393,6 +1399,16 @@ a:active {
   padding: 0;
 }
 
+.form._send input {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form._send .send {
+  visibility: visible;
+  opacity: 1;
+}
+
 .form__title {
   margin: 20px 0;
 }
@@ -1451,6 +1467,18 @@ a:active {
   color: #000;
   position: relative;
   z-index: 3;
+}
+
+.send {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .8s;
+  -o-transition: opacity .8s;
+  transition: opacity .8s;
+}
+
+.send--left {
+  fill: #681186;
 }
 
 .arrow {
@@ -1693,8 +1721,12 @@ a:active {
   }
 
   .page__bullet {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .page__scroll {
+    width: 4px;
   }
 
   .tariff__conteiner {

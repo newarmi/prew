@@ -83,8 +83,8 @@ class DOMAnimations {
 	}
 }
 document.querySelector('.burger').addEventListener('click', function () {
-	this.classList.toggle('active');
-	document.querySelector('.nav').classList.toggle('active');
+	this.classList.toggle('_active');
+	document.querySelector('.nav').classList.toggle('_active');
 
 })
 const screen = document.querySelectorAll('.page__sreen')
@@ -140,6 +140,11 @@ let pageSlider = new Swiper('.page', {
 			document.querySelectorAll('.popup').forEach((el) => {
 				el.classList.remove('_active');
 			})
+			document.querySelectorAll('.cards__item').forEach((el) => {
+				el.classList.remove('_active');
+			})
+			document.querySelector('.burger').classList.remove('_active');
+			document.querySelector('.nav').classList.remove('_active');
 		},
 	},
 	pagination: {
