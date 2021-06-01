@@ -82,6 +82,7 @@ class DOMAnimations {
 		}
 	}
 }
+
 /**
  * Swiper 6.5.9
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -347,5 +348,10 @@ document.querySelectorAll('.form__button input').forEach((elem) => {
 			xhttp.send();
 
 		}
+	})
+})
+document.querySelectorAll('.closs-catr').forEach((elem) => {
+	elem.addEventListener('click', function () {
+		this.parentElement.parentElement.classList.remove('_active')
 	})
 })
