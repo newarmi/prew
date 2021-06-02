@@ -944,6 +944,7 @@ a:active {
   font-family: montserrat;
   font-size: 15px;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 .main__text {
@@ -1027,6 +1028,59 @@ a:active {
       -ms-transform: translateY(-50%) translateX(0);
           transform: translateY(-50%) translateX(0);
   opacity: 1;
+}
+
+.about-you__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-you__title {
+  margin: 66px auto 34px auto;
+  width: 100%;
+  max-width: 1596px;
+}
+
+.about-you__title h2 {
+  font-family: Gosha Sans;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: calc(40px + 35 * ((100vw - 320px) / 1600));
+}
+
+.about-you-content {
+  padding: 0px 20px 0px 0px;
+}
+
+.about-you-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 5px 0px;
+}
+
+.about-you-content__item img {
+  margin: 0px 5px 0px 0px;
+}
+
+.about-you-content__item span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(16px + 9 * ((100vw - 320px)/ 1600));
+  line-height: 150%;
+  color: #fff;
+  line-height: 1.5em;
 }
 
 .about__conteiner {
