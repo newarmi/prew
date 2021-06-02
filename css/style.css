@@ -1244,10 +1244,11 @@ a:active {
 
 .final {
   opacity: 0;
+  padding: 0px 0px 100px 0px;
 }
 
 .final img {
-  width: 300px;
+  width: 27.77777vh;
 }
 
 .roadmap._anim-item .line--left2right {
@@ -1967,7 +1968,21 @@ a:active {
 .footer {
   height: auto;
   min-height: auto;
-  padding: 0px 5px 0px 0px;
+  padding: 20px 5px 20px 0px;
+}
+
+.footer a:hover {
+  color: #681186;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 10px 0px;
 }
 
 .footer__conteiner {
@@ -2068,7 +2083,7 @@ a:active {
   .header__nav {
     position: static;
     padding: 0;
-    max-width: 400px;
+    max-width: 600px;
     visibility: visible;
     opacity: 1;
   }
@@ -2130,6 +2145,10 @@ a:active {
     height: 100px;
   }
 
+  .final {
+    padding: 0;
+  }
+
   ._anim-item .about-slider-item__inner {
     margin: 0px 0px 2px 0px;
     margin-left: calc(12px + 34 * ((100vw - 320px) / 1600));
@@ -2171,6 +2190,10 @@ a:active {
             box-shadow: none;
   }
 
+  .footer__logo {
+    display: block;
+  }
+
   .footer__text {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2182,7 +2205,7 @@ a:active {
   }
 
   .footer__link {
-    text-align: right;
+    text-align: left;
     margin: 0px 0px 10px 0px;
   }
 
