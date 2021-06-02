@@ -1088,6 +1088,7 @@ a:active {
 }
 
 .roadmap {
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,6 +1099,11 @@ a:active {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.roadmap__item {
+  margin: 0px 0px 80px 0px;
 }
 
 .roademap-item {
@@ -1170,6 +1176,7 @@ a:active {
 
 .line {
   position: absolute;
+  margin: 0px 0px 80px 0px;
 }
 
 .line--left2right {
