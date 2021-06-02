@@ -1102,10 +1102,6 @@ a:active {
   position: relative;
 }
 
-.roadmap__item {
-  margin: 0px 0px 80px 0px;
-}
-
 .roademap-item {
   opacity: 0;
   position: absolute;
@@ -1176,7 +1172,6 @@ a:active {
 
 .line {
   position: absolute;
-  margin: 0px 0px 80px 0px;
 }
 
 .line--left2right {
@@ -1236,7 +1231,6 @@ a:active {
   -webkit-transition: height 1.5s linear 1.5s;
   -o-transition: height 1.5s linear 1.5s;
   transition: height 1.5s linear 1.5s;
-  height: 100%;
 }
 
 .roadmap._anim-item .line--right2left {
@@ -2214,6 +2208,20 @@ a:active {
 @media (min-width: 1200px) {
   .about-slider {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .roadmap__item {
+    margin: 0px 0px 150px 0px;
+  }
+
+  .line {
+    margin: 0px 0px 150px 0px;
+  }
+
+  .roadmap._anim-item .line--top2bottom {
+    height: 60%;
   }
 }
 
