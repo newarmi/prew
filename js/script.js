@@ -355,3 +355,47 @@ document.querySelectorAll('.closs-catr').forEach((elem) => {
 		this.parentElement.parentElement.classList.remove('_active')
 	})
 })
+
+
+let x1 = null;
+let y1 = null;
+let xDiff = null;
+
+function handleStart(evt) {
+	const eventTouch = evt.touches[0];
+	x1 = eventTouch.clientX;
+	// console.log(x1);
+
+
+
+}
+function handleMove(evt) {
+	if (!x1) {
+		false
+	}
+	else {
+		const eventTouch = evt.touches[0];
+		x2 = eventTouch.clientX;
+
+		xDiff = x2 - x1;
+		console.log(xDiff);
+		if (xDiff > -3) {
+			this.style.transform = `translateX(${xDiff}px)`;
+
+		}
+	}
+
+}
+function handleEnd(evt) {
+	this.style = null;
+	if (xDiff > 100) {
+		this.classList.remove('_active')
+	}
+}
+document.querySelectorAll('.popup').forEach((el) => {
+	el.addEventListener("touchstart", handleStart, false);
+	el.addEventListener("touchmove", handleMove, false);
+	el.addEventListener("touchend", handleEnd, false);
+})
+
+
