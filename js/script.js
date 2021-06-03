@@ -201,7 +201,9 @@ function menuSliderRemove() {
 
 
 pageSlider.init();
-
+document.querySelector('.main__button button').addEventListener('click', function () {
+	document.querySelector('#click').click()
+})
 let aboutSlider = new Swiper('.about-slider', {
 	//add class
 	wrapperClass: "about-slider__wrapper",
@@ -365,6 +367,7 @@ function handleStart(evt) {
 	const eventTouch = evt.touches[0];
 	x1 = eventTouch.clientX;
 	// console.log(x1);
+	this.style.transition = `transform 0.1s linear`
 
 
 
@@ -380,6 +383,7 @@ function handleMove(evt) {
 		xDiff = x2 - x1;
 		console.log(xDiff);
 		if (xDiff > -3) {
+
 			this.style.transform = `translateX(${xDiff}px)`;
 
 		}
